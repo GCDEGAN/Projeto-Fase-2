@@ -1,0 +1,85 @@
+<!-- Carrossel de Produtos -->
+<section id="produtos" class="container mt-4">
+    <h2 class="text-center">Nossos Produtos</h2>
+    <div id="carouselProdutos" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imagens/maca.webp" class="d-block w-100" width="150" height="150" alt="Maçã Vermelha - R$ 4,00/kg">
+            </div>
+            <div class="carousel-item">
+                <img src="imagens/Alface.webp" class="d-block w-100" width="150" height="150" alt="Alface - R$ 2,50/unidade">
+            </div>
+            <div class="carousel-item">
+                <img src="imagens/Arroz.png" class="d-block w-100" width="150" height="150" alt="Arroz 5kg - R$ 20,00">
+            </div>
+            <div class="carousel-item">
+                <img src="imagens/Feijao.jpg" class="d-block w-100" width="150" height="150" alt="Feijão 1kg - R$ 8,00">
+            </div>
+            <div class="carousel-item">
+                <img src="imagens/Sabonete.webp" class="d-block w-100" width="150" height="150" alt="Sabonete - R$ 2,50">
+            </div>
+            <div class="carousel-item">
+                <img src="imagens/Detergente.webp" class="d-block w-100" width="150" height="150" alt="Detergente - R$ 3,00">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProdutos" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselProdutos" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+</section>
+
+<!-- Formulário de Cadastro -->
+<section id="cadastro" class="container mt-4">
+    <h2 class="text-center">Cadastro do Cliente</h2>
+    <form id="formCadastro">
+        <div class="mb-3">
+            <label for="nome" class="form-label">Nome Completo</label>
+            <input type="text" class="form-control" id="nome" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+            <label for="cpf" class="form-label">CPF</label>
+            <input type="text" class="form-control" id="cpf" placeholder="000.000.000-00" required>
+        </div>
+        <div class="mb-3">
+            <label for="telefone" class="form-label">Telefone</label>
+            <input type="tel" class="form-control" id="telefone" required>
+        </div>
+        <div class="mb-3">
+            <label for="endereco" class="form-label">Endereço</label>
+            <input type="text" class="form-control" id="endereco" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+    </form>
+</section>
+
+<!-- Agendamento de Retirada ou Entrega -->
+<section id="agendamento" class="container mt-4">
+    <h2 class="text-center">Agendamento de Entrega ou Retirada</h2>
+    <form>
+        <div class="mb-3">
+            <label for="data" class="form-label">Escolha a data</label>
+            <input type="date" class="form-control" id="data" required>
+        </div>
+        <div class="mb-3">
+            <label for="hora" class="form-label">Escolha o horário</label>
+            <input type="time" class="form-control" id="hora" required>
+        </div>
+        <button type="submit" class="btn btn-success">Confirmar Agendamento</button>
+    </form>
+</section>
+
+<!-- Rodapé -->
+<footer class="text-center p-3 bg-dark text-white mt-4">
+    <p>&copy; 2025 Minimercado XYZ. Todos os direitos reservados.</p>
+    <p>Contato: contato@minimercadoxyz.com | Telefone: (11) 99999-9999</p>
+    <p>Desenvolvido por [Guilherme Colognezi Degan] - Projeto Academico</p>
+</footer>
+
+<script src="script.js"></script> <!-- Link para JavaScript externo -->
